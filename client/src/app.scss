@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+    background-color: #F2F3F4;
+    //! maybe remove background color causing problems insted apply color to 100vh screen later in each screen component
+
+}
+
+.app{
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+    .routines-container{
+        padding-left: 5px;
+    }
+    
+
+}

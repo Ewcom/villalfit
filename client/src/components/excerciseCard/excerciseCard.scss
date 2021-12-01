@@ -1,0 +1,76 @@
+.excerciseCard {
+    margin: 5px;
+    width: 500px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    * {
+        background-color: #FFFFFF;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .card_image {
+        position: absolute;
+        top: 5px;
+        left: 400px;
+        padding: 10px;
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .container1 {
+        padding: 5px;
+        flex: 1;
+
+       display: flex;
+
+        .card_name {
+            font-weight: 900;
+            font-size: 1.5rem;
+            flex: 1;
+        }
+
+        .card_weight {
+            flex: 1;
+
+            padding-left: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            .weightLetters{
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .container2 {
+        padding: 5px;
+        padding-left: 10px;
+
+        flex: 1;
+
+        .card_repetitions_container {
+            font-weight: 300;
+            font-size: 1.4rem;
+
+            .x{
+                font-size: 0.9rem;
+                font-weight: 1000;
+            }
+
+            .card_repetitions_item {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
