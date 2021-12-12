@@ -1,17 +1,18 @@
-import React, { useState, useEffect, useHistory } from 'react'
+import React, { useState, useEffect } from 'react'
 import './profileUI.scss'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { axiosInstance } from '../../../helpers/axiosJWT'
-// import { useHistory } from 'react-router-dom';
+ import { useHistory } from 'react-router-dom';
 
 
 
 export const ProfileUI = () => {
 
+    const history = useHistory();
+
     const [profileName, setProfileName] = useState('')
 
     const [isProfileDropdownOpen, setProfileDropdownOpen] = useState(false)
-    // const history = useHistory();
 
 
     async function fetchProfileDataFromLocalStorage() {
@@ -36,6 +37,8 @@ export const ProfileUI = () => {
     // LOGOUT
     const handleLogout = async () => {
 
+
+
         const localUser = await JSON.parse(localStorage.getItem("user"))
         const axiosJWT = await axiosInstance()
 
@@ -46,8 +49,8 @@ export const ProfileUI = () => {
 
             console.log(res.data)
             await localStorage.removeItem("user")
-            // history.go('/')
-            window.location.reload();
+            history.replace('/')
+            window.location.reload()
 
             
 

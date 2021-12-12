@@ -1,22 +1,56 @@
-.leftBar{
+.leftBar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   background-color: #141414;
   display: flex;
-  hr{
+
+  @media (max-width: 710px) {
+      
+  width: 100px;
+    
+  }
+
+
+
+  .mobile-routines{
+    display: none;
+
+    @media (max-width: 710px) {
+      
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 25px;
+      
+    }
+
+    .mobile-icon{
+      font-size: 3rem;
+      background-color: #141414  ;
+      color: white;
+
+    }
+
+  }
+
+  
+  hr {
     border: 1px solid white;
   }
 
-  a{
+  a {
     text-decoration: none;
     background-color: #141414;
     height: inherit;
     width: 200px;
+
+    @media (max-width: 710px) {
+      width: 100px !important;
+    }
   }
 
- 
-  .logo{
+  .logo {
     padding-top: 10px;
     text-align: center;
     position: relative;
@@ -25,35 +59,37 @@
     width: 200px;
     height: 50px;
     font-size: 1.7rem;
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-weight: 200;
-    
+
+    @media (max-width: 710px) {
+      display: none;
+    }
   }
 
-  .buttons-container{
+  .buttons-container {
     margin-top: 100px;
     position: inherit;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 
-    
-    .section{
+    @media (max-width: 710px) {
+      display: none;
+    }
+
+    .section {
       width: 160px;
       font-size: 0.9rem;
       font-weight: 600;
       padding: 20px;
-      color: #F2F2F2;
-      background-color:#141414 ;
-      
-
+      color: #f2f2f2;
+      background-color: #141414;
     }
 
-    .section:hover{
-      user-select:none;
+    .section:hover {
+      user-select: none;
       cursor: pointer;
-      background-color:#3b3b3b  ;
+      background-color: #3b3b3b;
     }
-
-    
   }
 }

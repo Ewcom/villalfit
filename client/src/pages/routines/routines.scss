@@ -13,7 +13,11 @@
         flex-wrap: wrap;
    
         height: calc(100vh - 110px);
-        width: calc(100vw - 205px);
+        width: calc(100% - 205px);
+
+        @media (max-width: 710px) {
+            left: 100px;
+        }
 
         a{
             text-decoration: none;

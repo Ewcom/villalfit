@@ -1,44 +1,43 @@
-.routineView{
-    
+.routineView {
+    width: calc(100vw - 200px);
+    height: calc(100vh - 110px);
 
-    .modal-wrapper{
+    .modal-wrapper {
         z-index: 100;
         position: relative;
-        
     }
-    
-    .routineViewContainer{
+
+    .routineViewContainer {
         z-index: 1;
         margin-top: 5px;
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        top:101px;
+        top: 101px;
         left: 200px;
-        width: calc(100vw - 200px);
-        height: calc(100vh - 110px);
 
-        
+        @media (max-width: 710px) {
+            left: 100px;
+        }
 
-        .noExcercisesContainer{
+        .noExcercisesContainer {
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            h1{
+            h1 {
                 font-weight: 400;
                 font-size: 2.5rem;
                 color: rgb(173, 173, 173);
             }
         }
 
-
-        .excercise-container{
+        .excercise-container {
             position: relative;
 
-            .excerciseDropdownMenu{
+            .excerciseDropdownMenu {
                 top: 10px;
                 right: 10px;
                 background-color: white;
@@ -46,6 +45,5 @@
                 position: absolute;
             }
         }
-        
     }
 }
