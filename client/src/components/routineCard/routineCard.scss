@@ -10,6 +10,10 @@
     position: relative;
     text-align: center;
 
+    @media (max-width: 710px) {
+        width: 280px;
+    }
+
     .dots{
         z-index: 5;
         position: absolute;
@@ -40,10 +44,18 @@
 
 
     .routine-pictures{
+        
         display: flex;
         height: 100%;
         padding-left: 10px;
         padding-top: 10px;
+
+        @media (max-width: 710px) {
+
+        display: block;
+            
+        }
+
         
         
 

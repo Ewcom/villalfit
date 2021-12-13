@@ -9,12 +9,29 @@
     flex-direction: column;
     position: relative;
 
+    @media (max-width: 710px) {
+      
+        width: 250px;
+
+
+    }
+
+
     * {
         background-color: #FFFFFF;
         color: rgba(0, 0, 0, 0.87);
     }
 
     .card_image {
+
+        
+    @media (max-width: 710px) {
+      
+       display: none;
+
+
+    }
+
         position: absolute;
         top: 5px;
         left: 400px;

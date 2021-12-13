@@ -63,6 +63,12 @@
             width: 200px;
             height: 140px;
 
+            @media (max-width: 710px) {
+                right: 50px;
+                  
+             
+                 }
+
             .formInputText{
                 box-sizing: border-box;   
                 font-size: 1.1rem;

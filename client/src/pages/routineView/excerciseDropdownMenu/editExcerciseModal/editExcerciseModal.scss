@@ -48,6 +48,12 @@
             flex-direction: column;
             align-items: center;
 
+              
+            @media (max-width: 710px) {
+                width: 250px;
+        
+            }
+
 
             .titleContainer{
                 background-color: white;
@@ -98,6 +104,12 @@
                 background-color: white;
                 display: flex;
                 position: relative;
+
+                @media (max-width: 710px) {
+                width: 40%;
+                  
+             
+                 }
                 
 
                 span {
@@ -106,6 +118,12 @@
                     position: absolute;
                     background-color: white;
                     font-weight: 700;
+
+                    @media (max-width: 710px) {
+                       right: -30px;
+                
+                    }
+        
                 }
             }
 

@@ -7,9 +7,12 @@
 
   @media (max-width: 710px) {
       
-  width: 100px;
+    width: 60px;
     
   }
+
+
+
 
 
 
@@ -20,10 +23,13 @@
       
       display: block;
       position: absolute;
-      top: 40px;
-      left: 25px;
+      top: 10px;
+      left: 5px;
       
     }
+
+
+
 
     .mobile-icon{
       font-size: 3rem;
@@ -46,8 +52,13 @@
     width: 200px;
 
     @media (max-width: 710px) {
-      width: 100px !important;
+      width: 60px !important;
     }
+
+    
+
+
+    
   }
 
   .logo {

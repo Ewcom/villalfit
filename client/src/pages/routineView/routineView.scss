@@ -17,15 +17,23 @@
         left: 200px;
 
         @media (max-width: 710px) {
-            left: 100px;
+            left: 60px;
         }
+
+   
 
         .noExcercisesContainer {
             height: 100%;
-            width: 100%;
+           
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media (max-width: 710px) {
+                width: auto;
+            }
+    
+       
 
             h1 {
                 font-weight: 400;
@@ -33,6 +41,8 @@
                 color: rgb(173, 173, 173);
             }
         }
+
+
 
         .excercise-container {
             position: relative;
